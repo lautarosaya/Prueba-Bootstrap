@@ -21,7 +21,8 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <!-- ms es margin start -->
+                    <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
@@ -46,30 +47,33 @@
         <div class="container my-3">
             <div class="row">
                 <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                    <h2>Solicitar Personal</h2>
+                    <h2 class="color">Solicitar Personal</h2>
+                    <!-- Form -->
                     <form>
                         <div class="my-3 mb-3">
-                            <label for="proyecto" class="form-label">Proyecto</label>
+                            <label for="proyecto" class="form-label color">Proyecto</label>
                             <input type="text" class="form-control" id="proyecto" placeholder="Nombre de proyecto...">
                         </div>
                         <div class="my-3 mb-3">
-                            <label for="descripcion" class="form-label">Descripcion de Tarea</label>
+                            <label for="descripcion" class="form-label color">Descripcion de Tarea</label>
                             <textarea class="form-control" id="descripcion" rows="3" placeholder="Breve descripcion..."></textarea>
                         </div>
                         <div class="my-3 mb-3">
-                            <label for="programadores" class="form-label">Cantidad de Programadores</label>
+                            <label for="programadores" class="form-label color">Cantidad de Programadores</label>
                             <input type="number" class="form-control" id="programadores">
                         </div>
+                        <!-- Botones -->
                         <div class="d-grid gap-2">
                             <button class="btn btn-success">Guardar</button>
-                            <button class="btn">Deshacer</button>
+                            <button class="btn btn-secondary">Deshacer</button>
                         </div>
                         
                     </form>
                 </div>
+                <!-- Tabla -->
                 <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">
-                    <h2>Lenguajes</h2>
-                    <table class="table table-striped">
+                    <h2 class="color">Lenguajes</h2>
+                    <table class="table centrado color">
                         <thead>
                             <tr>
                                 <th>#</th>
